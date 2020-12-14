@@ -1,5 +1,12 @@
 # nuxt-template-movabletype
 
+## envファル
+
+```dotenv
+API_URL=https://MY_DOMAIN/MT_INSTALL_PATH/mt-data-api.cgi/v4/sites/
+SITE_ID=1
+```
+
 ## Build Setup
 
 ```bash
