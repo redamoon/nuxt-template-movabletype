@@ -1,4 +1,3 @@
-require('dotenv').config()
 const { API_URL, SITE_ID } = process.env
 
 export default {
