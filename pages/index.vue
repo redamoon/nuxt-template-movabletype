@@ -14,11 +14,17 @@
 <script>
 export default {
   async asyncData({ $axios, $config, error }) {
-    const entries = await $axios.get(
-      `${$config.apiUrl}${$config.siteId}/entries`
-    )
-    return {
-      posts: entries.data.items,
+    try {
+      const entries = await $axios.get(
+        `https://movabletype-knowledge.tech/cgi-bin/_mt_admin/mt-data-api.cgi/entries`
+      )
+      return {
+        posts: entries.data.items,
+      }
+    } catch (err) {
+      error({
+        errorCode: 404,
+      })
     }
   },
 }
