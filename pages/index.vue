@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-4">
-    <h2 class="text-lg font-bold">記事の更新確認</h2>
+    <h2 class="text-lg font-bold">ブログ記事</h2>
     <div v-for="(post, index) in posts" :key="index" class="grid grid-cols-3">
       <div>
         <nuxt-link :to="`/blog/${post.id}`">
