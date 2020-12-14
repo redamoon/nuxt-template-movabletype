@@ -13,7 +13,7 @@ export default {
   async asyncData({ $axios, $config, params, error }) {
     try {
       const { data } = await $axios.get(
-        `${$config.apiUrl}${$config.blogId}/entries/${params.id}`
+        `${$config.apiUrl}${$config.siteId}/entries/${params.id}`
       )
       return {
         post: data,
