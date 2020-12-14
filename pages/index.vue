@@ -16,7 +16,7 @@ export default {
   async asyncData({ $axios, $config, error }) {
     try {
       const entries = await $axios.get(
-        `https://movabletype-knowledge.tech/cgi-bin/_mt_admin/mt-data-api.cgi/entries`
+        `${$config.apiUrl}${$config.siteId}/entries`
       )
       return {
         posts: entries.data.items,
