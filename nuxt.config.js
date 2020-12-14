@@ -43,6 +43,10 @@ export default {
     withCredentials: true,
   },
 
+  generate: {
+    fallback: true,
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
