@@ -3,9 +3,9 @@
     <h2 class="text-lg font-bold">ブログ記事</h2>
     <div v-for="(post, index) in posts" :key="index" class="grid grid-cols-3">
       <div>
-        <nuxt-link :to="`/blog/${post.id}`">
+        <a :href="`/blog/${post.id}/`">
           {{ post.title }}
-        </nuxt-link>
+        </a>
       </div>
     </div>
   </div>
