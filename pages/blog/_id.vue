@@ -13,7 +13,7 @@ export default {
   async asyncData({ $axios, $config, params, error }) {
     try {
       const { data } = await $axios.get(
-        `https://movabletype-knowledge.tech/cgi-bin/_mt_admin/mt-data-api.cgi/v4/sites/1/entries/${params.id}`
+        `${$config.apiUrl}${$config.blogId}/entries/${params.id}`
       )
       return {
         post: data,
