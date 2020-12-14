@@ -1,4 +1,4 @@
-const { API_URL, SITE_ID } = process.env
+const { API_URL, BLOG_ID } = process.env
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -48,6 +48,6 @@ export default {
 
   publicRuntimeConfig: {
     apiUrl: API_URL,
-    siteId: SITE_ID,
+    siteId: BLOG_ID,
   },
 }
