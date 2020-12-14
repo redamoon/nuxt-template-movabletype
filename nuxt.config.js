@@ -1,6 +1,7 @@
 const { API_URL, SITE_ID } = process.env
 
 export default {
+  mode: 'universal',
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
