@@ -1,7 +1,6 @@
 const { API_URL, SITE_ID } = process.env
 
 export default {
-  mode: 'universal',
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -42,10 +41,6 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     withCredentials: true,
-  },
-
-  generate: {
-    fallback: true,
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
