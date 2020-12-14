@@ -11,17 +11,11 @@
 <script>
 export default {
   async asyncData({ $axios, $config, params, error }) {
-    try {
-      const { data } = await $axios.get(
-        `${$config.apiUrl}${$config.siteId}/entries/${params.id}`
-      )
-      return {
-        post: data,
-      }
-    } catch (err) {
-      error({
-        errorCode: 404,
-      })
+    const { data } = await $axios.get(
+      `${$config.apiUrl}${$config.siteId}/entries/${params.id}`
+    )
+    return {
+      post: data,
     }
   },
 }
